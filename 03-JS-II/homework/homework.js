@@ -1,6 +1,6 @@
 // No cambies los nombres de las funciones.
 
-const { nuevaMultiplicacion } = require("../../02-JS-I/homework/homework");
+const { nuevaMultiplicacion, numeroRandom } = require("../../02-JS-I/homework/homework");
 
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
@@ -171,7 +171,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if numero
+  
 } 
 
 function esVerdadero(valor){
@@ -195,8 +195,14 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero.length == 3) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
+
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
